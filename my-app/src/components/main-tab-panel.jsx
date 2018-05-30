@@ -8,6 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import tabs from '../constants/tabs-data';
+import SphereInfo from './sphere-info';
 
 const STYLES = theme => ({
   root: {
@@ -45,7 +46,7 @@ class MainTabPanel extends Component {
         </MuiThemeProvider>
         {this.state.value === 0 && <div>Item One</div>}
         {this.state.value === 1 && <div>Item Two</div>}
-        {this.state.value === 2 && <div>Item Three</div>}
+        {this.state.value === 2 && <SphereInfo />}
         {this.state.value === 3 && <div>Item fore</div>}
         {this.state.value === 4 && <div>Item five</div>}
         {this.state.value === 5 && <div>Item six</div>}
